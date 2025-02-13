@@ -1,0 +1,94 @@
+.second {
+  position: relative; /* Ensure parent is positioned */
+  height: 140vh; /* Make parent tall enough to allow scrolling */
+}
+
+.top {
+  position: sticky;
+  top: 0;
+  background-color: black; /* Ensures it stays visible */
+  z-index: 50; /* Keeps it above other content */
+  padding: 10px;
+  width: 60%;
+  
+}
+
+
+/* Custom Black Scrollbar for .posts */
+.posts {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.posts::-webkit-scrollbar {
+  width: 12px;
+}
+
+.posts::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track {
+  background: #222; /* Dark track */
+}
+
+.posts::-webkit-scrollbar-thumb {
+  background: black; /* Black scrollbar */
+  border-radius: 5px;
+}
+
+.posts::-webkit-scrollbar-thumb:hover {
+  background: #333; /* Slightly lighter on hover */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Grey Scrollbar for Whole Page */
+html::-webkit-scrollbar {
+  width: 16px;
+  height: 16px; /* Sets thickness for horizontal scrollbar */
+}
+
+html::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 400px) {
+  .second,
+  .first {
+    max-height: 98vh;
+    overflow-y: auto; /* Allow scrolling within this section */
+    position: relative;
+  }
+
+  /* Prevent body scrolling when .second or .first is open */
+  body.scroll-lock,
+  .first.scroll-lock {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 320px) {
+  .p-img {
+    display: none;
+    padding: 0;
+  }
+  .placeholder {
+    margin-top: 10px;
+    width: 250px;
+    padding: 0;
+    /* padding-left: 10px; */
+    text-align: center;
+  }
+  .whatishappen {
+    margin: 0;
+    padding: 0;
+  }
+}

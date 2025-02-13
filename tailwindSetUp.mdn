@@ -1,0 +1,78 @@
+##how to setup tailwindCss
+
+step 1: Run  the folowing command
+'''
+    npm install -D tailwindcss  
+    npx tailwindcss init
+'''
+step 2: update tailwindcss.config.js file to include this line
+
+"
+ @type {import('tailwindcss').Config} */
+module.exports = {
+    content: ["./*.{html,js}"], // Match all HTML and JS files
+    theme: {
+      extend: {
+        fontSize: {
+          '9xl': '8rem', // Add custom large text size
+          '10xl': '10rem',
+        },
+        colors: {
+          red: {
+            850: '#b20000', // Add a custom red shade
+          },
+        },
+      },
+    },
+    plugins: [],
+  };
+"
+'''
+
+content : ["*.html"],
+
+'''
+
+step 3: include src/input.css these
+
+"
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+"
+it is used in new version
+'''
+@import "tailwindcss";
+
+'''
+
+step 4: include src/output.css using this command
+
+'''
+npx tailwindcss -i ./input.css -o ./output.css --watch
+
+'''
+
+step 5: link src/output.css in html file
+
+'''
+
+  <link href="./output.css" rel="stylesheet">
+
+'''
+
+for vite :
+
+npm install tailwindcss @tailwindcss/vite
+
+
+than
+
+npm run dev
+
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "vite" -> write this before
+  },

@@ -1,0 +1,30 @@
+{
+  "name": "twitterx",
+  "version": "1.0.0",
+  "description": "Now work on twitter clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zunoon-Ali/twitterX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zunoon-Ali/twitterX/issues"
+  },
+  "homepage": "https://github.com/Zunoon-Ali/twitterX#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.0.4"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.1",
+    "@tailwindcss/vite": "^4.0.4",
+    "vite": "^6.1.0"
+  }
+}

@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/Xsvg.svg"
+      id="favicon"
+    />
+
+    <title>X (Twitter)</title>
+  </head>
+  <body class="bg-black text-white">
+    <div class="flex container mt-2 space-x-2">
+      <!-- first section -->
+      <div
+        class="first w-[20vw] md:w-[40vw] lg:w-[23vw] hidden md:block fixed md:static bg-black z-100"
+      >
+        <div class="logo my-4 flex self-start">
+          <img
+            src="/assets/Xsvg.svg"
+            alt="X"
+            class="w-8 invert mx-auto md:mx-10 lg:mx-12 xl:mx-20"
+          />
+        </div>
+        <div class="sidebar flex flex-col items-center lg:pl-0">
+          <ul class="flex flex-col text-[0.85rem]">
+            <li
+              class="flex justify-start md:w-fit items-center gap-2 p-3 hover:bg-grey-800 hover:text-blue-500 hover:bg-[#222222] hover:rounded-full hover:cursor-pointer font-bold"
+            >
+              <span class="material-symbols-outlined"> home </span>
+              <span class="hidden md:block">Home</span>
+            </li>
+            <li
+              class="flex justify-start md:w-fit items-center gap-2 p-4 hover:bg-grey-800 hover:text-blue-500 hover:bg-[#222222] hover:rounded-full hover:cursor-pointer font-bold"
+            >
+              <span class="material-symbols-outlined">search</span>
+              <span class="hidden md:block">Explore</span>
+            </li>
+            <li
+              class="flex justify-start md:w-fit items-center gap-2 p-4 hover:bg-grey-800 hover:text-blue-500 hover:bg-[#222222] hover:rounded-full hover:cursor-pointer font-bold"
+            >
+              <span class="material-symbols-outlined">notifications</span>
+              <span class="hidden md:block">Notification</span>
+            </li>
+            <li
+              class="flex justify-start md:w-fit items-center gap-2 p-4 hover:bg-grey-800 hover:text-blue-500 hover:bg-[#222222] hover:rounded-full hover:cursor-pointer font-bold"
+            >
+              <span class="material-symbols-outlined">mail</span>
+              <span class="hidden md:block">Messages</span>
+            </li>
+            <li
+              class="flex justify-start md:w-fit items-center gap-2 p-4 hover:bg-grey-800 hover:text-blue-500 hover:bg-[#222222] hover:rounded-full hover:cursor-pointer font-bold"
+            >
+              <span class="material-symbols-outlined">list</span>
+              <span class="hidden md:block">Lists</span>
+            </li>
+            <li
+              class="flex justify-start md:w-fit items-center gap-2 p-4 hover:bg-grey-800 hover:text-blue-500 hover:bg-[#222222] hover:rounded-full hover:cursor-pointer font-bold"
+            >
+              <span class="material-symbols-outlined">groups</span>
+              <span class="hidden md:block">Communities</span>
+            </li>
+            <li
+              class="flex justify-start md:w-fit items-center gap-2 p-4 hover:bg-grey-800 hover:text-blue-500 hover:bg-[#222222] hover:rounded-full hover:cursor-pointer font-bold"
+            >
+              <span class="material-symbols-outlined">check_circle</span>
+              <span class="hidden md:block">Verified</span>
+            </li>
+            <li
+              class="flex justify-start md:w-fit items-center gap-2 hover:bg-grey-800 hover:text-blue-500 hover:bg-[#222222] hover:rounded-full hover:cursor-pointer font-bold p-4"
+            >
+              <span class="material-symbols-outlined">person</span>
+              <span class="hidden md:block">Profile</span>
+            </li>
+            <li
+              class="flex justify-start md:w-fit items-center gap-2 hover:bg-grey-800 hover:text-blue-500 hover:bg-[#222222] hover:rounded-full hover:cursor-pointer font-bold p-4"
+            >
+              <span class="material-symbols-outlined">more_horiz</span>
+              <span class="hidden md:block">More</span>
+            </li>
+            <li>
+              <div class="post mt-2">
+                <button
+                  class="w-15 md:w-35 hidden md:block lg:w-50 flex md:justify-start justify-center text-white text-md font-bold bg-blue-600 rounded-full px-2 md:px-5 py-1 md:py-3 hover:bg-white hover:text-blue-600"
+                >
+                  Post
+                </button>
+                <button
+                  class="w-[60px] h-[35px] md:hidden flex md:justify-start justify-center text-white text-md font-bold bg-blue-600 rounded-full px-2 md:px-5 py-1 md:py-3 hover:bg-white hover:text-blue-600"
+                >
+                  <span class="material-symbols-outlined"> edit </span>
+                </button>
+              </div>
+            </li>
+          </ul>
+
+          <div
+            class="userProfile flex items-center gap-2 mt-10 p-3 bg-[#222222] rounded-full hover:bg-white hover:cursor-pointer hidden lg:flex group font-extrabold"
+          >
+            <div class="img">
+              <img
+                src="/assets/p0.jpg"
+                alt="profile image"
+                class="w-[55px] h-[55px] sm:w-15 sm:h-15 rounded-full border-2 border-blue-500"
+              />
+            </div>
+            <div class="accInfo">
+              <div
+                class="name text-sm text-white group-hover:text-black hover:underline hover:decoration-blue-500 hover:cursor-pointer"
+              >
+                Zunoon Ali
+              </div>
+
+              <div
+                class="username text-[0.85rem] text-white group-hover:text-black"
+              >
+                zunoon<span class="text-blue-600 group-hover:text-blue-500"
+                  >@786</span
+                >
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="links hidden lg:grid grid-cols-3 w-[22vw] text-gray-500 mt-10 gap-x-4 gap-y-2 justify-items-center border border-x-black border-y-white py-10">
+          <span class="hover:text-white transition cursor-pointer hover:underline">About</span>
+          <span class="hover:text-white transition cursor-pointer hover:underline">Help</span>
+          <span class="hover:text-white transition cursor-pointer hover:underline">Press</span>
+          <span class="hover:text-white transition cursor-pointer hover:underline">API</span>
+          <span class="hover:text-white transition cursor-pointer hover:underline">Jobs</span>
+          <span class="hover:text-white transition cursor-pointer hover:underline">Privacy</span>
+          <span class="hover:text-white transition cursor-pointer hover:underline">Terms</span>
+          <span class="hover:text-white transition cursor-pointer hover:underline">Locations</span>
+          <span class="hover:text-white transition cursor-pointer hover:underline">Top Accounts</span>
+          <span class="hover:text-white transition cursor-pointer hover:underline">Hashtags</span>
+          <span class="hover:text-white transition cursor-pointer hover:underline">Language</span>
+        </div>
+        
+        <div class="copyRight hidden lg:flex mt-10 text-gray-700 border border-y-white border-x-black py-5 items-center justify-center">
+          <span class="text-sm text-gray-400 cursor-pointer tracking-wide">
+            &copy; 2021 
+            <span class="font-extrabold hover:text-white hover:underline underline-offset-4">Twitter</span>, Inc.
+          </span>
+        </div>
+        
+        
+      </div>
+
+      <!-- second section -->
+
+      <div
+        class="second w-[100%] lg:w-[50vw] md:border-[1px] md:border-x-white md:border-y-black md:border-l-2 md:border-white-[1px] flex flex-col lg:pl-8 pl-2 md:px-4 relative h-[200vh]"
+      >
+        <div
+          class="top flex items-center justify-between md:justify-around sticky top-0 sm:mx-auto sm:p-2 gap-3 md:gap-20 text-sm md:text-lg mx-auto w-[80%] bg-black z-50 py-6"
+        >
+          <div class="settings flex justify-center hidden sm:block">
+            <span class="material-symbols-outlined" id="setting">
+              settings
+            </span>
+          </div>
+          <div class="hamburger flex justify-center sm:hidden">
+            <span class="material-symbols-outlined"> menu </span>
+          </div>
+          <div class="close flex justify-center hidden">
+            <span class="material-symbols-outlined"> close </span>
+          </div>
+          <div class="forYou flex justify-center relative">
+            For You
+            <div
+              class="line w-[50px] h-1 bg-blue-500 absolute bottom-[-10px] z-20"
+            ></div>
+          </div>
+          <div class="following flex justify-center">Following</div>
+        </div>
+
+        <div class="hr h-[1px] bg-[#6e6e6e]"></div>
+
+        <div
+          class="whatishappen flex items-center justify-center md:justify-center sm:gap-5 md:mx-auto pl-1 mt-3 sm:ml-8 ml-3 gap-2"
+        >
+          <div class="img">
+            <img
+              src="./assets/p0.jpg"
+              alt="zunoon"
+              class="w-[48px] h-[48px] sm:w-14 sm:h-14 md:w-17 md:h-17 rounded-full border-2 border-blue-500 p-img"
+            />
+          </div>
+          <div class="placeholder">
+            <input
+              type="text"
+              placeholder="What's happening?"
+              class="w-[230px] sm:w-100 sm:h-[50px] md:w-[355px] lg:w-[300px] xl:w-[450px] h-[50px] bg-[#0f0f0f] text-white pl-2 focus:outline-none rounded-lg placeholder"
+            />
+          </div>
+        </div>
+        <div
+          class="globe m-3 flex items-center gap-2 mx-8 text-blue-600 space-y-2"
+        >
+          <span class="material-symbols-outlined"> globe_asia </span>
+          <span class="text-sm font-bold">everyone can reply</span>
+        </div>
+        <div class="line h-[1px] bg-[#535353] relative bottom-3 left-10"></div>
+
+        <div class="hr h-[1px] bg-[#6e6e6e]"></div>
+        <div
+          class="blueIconDiv flex items-center justify-around gap-3 md:gap-5 text-blue-500 p-2 sm:p-3 sm:mx-15 md:mx-5"
+        >
+          <div class="blueIcons flex">
+            <div class="image">
+              <span
+                class="material-symbols-outlined cursor-pointer hover:text-white p-2 hover:rounded-full hover:bg-[#1f1e1e]"
+              >
+                image
+              </span>
+            </div>
+            <div class="gif">
+              <span
+                class="material-symbols-outlined cursor-pointer hover:text-white p-2 hover:rounded-full hover:bg-[#1f1e1e]"
+              >
+                gif
+              </span>
+            </div>
+            <div class="poll">
+              <span
+                class="material-symbols-outlined cursor-pointer hover:text-white p-2 hover:rounded-full hover:bg-[#1f1e1e]"
+              >
+                poll
+              </span>
+            </div>
+            <div class="emoji">
+              <span
+                class="material-symbols-outlined cursor-pointer hover:text-white p-2 hover:rounded-full hover:bg-[#1f1e1e]"
+              >
+                emoji_emotions
+              </span>
+            </div>
+            <div class="schedule">
+              <span
+                class="material-symbols-outlined cursor-pointer hover:text-white p-2 hover:rounded-full hover:bg-[#1f1e1e]"
+              >
+                schedule
+              </span>
+            </div>
+          </div>
+          <div class="postButton">
+            <button
+              class="w-15 md:w-25 hidden md:block lg:w-40 flex md:justify-start justify-center text-white text-md font-bold bg-blue-600 rounded-full px-2 md:px-5 py-1 md:py-3 hover:bg-white hover:text-blue-600"
+            >
+              Post
+            </button>
+            <button
+              class="w-[50px] h-[35px] md:hidden flex md:justify-start justify-center text-white text-md font-bold bg-blue-600 rounded-full px-2 md:px-5 py-1 md:py-3 hover:bg-white hover:text-blue-600"
+            >
+              <span class="material-symbols-outlined"> edit </span>
+            </button>
+          </div>
+        </div>
+        <div class="hr h-[1px] bg-[#6e6e6e]"></div>
+
+        <div class="posts sm:space-y-5 mt-5 pl-2">
+          <div class="hr h-[1px] w-full bg-[#6e6e6e]"></div>
+
+          <div class="media my-4 space-y-2">
+            <div
+              class="post flex flex-col sm:flex-row sm:mx-auto items-center justify-center my-4 gap-4"
+            >
+              <div class="flex items-center gap-5">
+                <div class="img">
+                  <img
+                    src="./assets/p0.jpg"
+                    alt="zunoon"
+                    class="w-[55px] h-[55px] sm:w-15 sm:h-15 rounded-full border-2 border-blue-500"
+                  />
+                </div>
+
+                <div class="flex flex-col">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="font-bold text-md md:text-lg hover:underline hover:text-blue-500 hover:cursor-pointer"
+                    >
+                      Zunoon Ali
+                    </span>
+                    <span class="material-symbols-outlined text-blue-700 ml-1">
+                      check_circle
+                    </span>
+                  </div>
+                  <div class="postText text-sm">Hehehe</div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between gap-2 flex-row">
+                <div class="status flex items-center text-sm gap-3">
+                  <span
+                    class="material-symbols-outlined text-[#5e5e5e] hover:text-white hover:cursor-pointer"
+                  >
+                    arrow_back_ios_new
+                  </span>
+                  <div
+                    class="role w-[140px] truncate whitespace-nowrap overflow-hidden md:blocktext-left text-sm text-[#5e5e5e] hover:text-white hover:cursor-pointer"
+                  >
+                    Working on a new project-6h 23min
+                  </div>
+                  <div class="dots font-bold text-sm sm:pl-10"></div>
+                </div>
+                <div>
+                  <span
+                    class="material-symbols-outlined text-[#5e5e5e] hover:cursor-pointer hover:text-blue-500"
+                  >
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="hr h-[1px] bg-[#6e6e6e]"></div>
+
+            <!-- Posted Image -->
+            <div class="posting my-8">
+              <a
+                href="/assets/v1.mp4"
+                target="_blank"
+                class="flex flex-col items-center my-3"
+              >
+                <video
+                  src="/assets/v1.mp4"
+                  class="w-[40%] rounded-2xl border border-white"
+                  controls
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </a>
+            </div>
+          </div>
+          <div class="hr h-[1px] bg-[grey]"></div>
+
+          <div class="react">
+            <div
+              class="flex justify-around items-center sm:gap-4 flex-wrap mx-auto"
+            >
+              <div class="comment flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-blue-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  chat_bubble_outline
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="retweet flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-green-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  repeat
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="like flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-pink-500 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  favorite_border
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="share flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-blue-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  share
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+            </div>
+          </div>
+          <div class="hr h-[1px] bg-[#6e6e6e]"></div>
+
+          <div class="media my-4 space-y-2">
+            <div
+              class="post flex flex-col w-[90%] sm:mx-auto items-center justify-center"
+            >
+              <div class="flex items-center gap-5">
+                <div class="img">
+                  <img
+                    src="./assets/p0.jpg"
+                    alt="zunoon"
+                    class="w-[55px] h-[55px] sm:w-15 sm:h-15 rounded-full border-2 border-blue-500"
+                  />
+                </div>
+
+                <div class="flex flex-col">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="font-bold text-md md:text-lg hover:underline hover:text-blue-500 hover:cursor-pointer"
+                    >
+                      Zunoon Ali
+                    </span>
+                    <span class="material-symbols-outlined text-blue-700 ml-1">
+                      check_circle
+                    </span>
+                  </div>
+                  <div class="postText text-sm">Hehehe</div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between mt-2 gap-2">
+                <div class="status flex items-center text-sm gap-3">
+                  <span
+                    class="material-symbols-outlined text-[#5e5e5e] hover:text-white hover:cursor-pointer"
+                  >
+                    arrow_back_ios_new
+                  </span>
+                  <div
+                    class="role w-[140px] truncate whitespace-nowrap overflow-hidden md:blocktext-left text-sm text-[#5e5e5e] hover:text-white hover:cursor-pointer"
+                  >
+                    Working on a new project-6h 23min
+                  </div>
+                  <div class="dots font-bold text-sm sm:pl-10"></div>
+                </div>
+                <div>
+                  <span
+                    class="material-symbols-outlined text-[#5e5e5e] hover:cursor-pointer hover:text-blue-500"
+                  >
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="hr h-[1px] w-[90vw] bg-[#6e6e6e]"></div>
+
+            <!-- Posted Image -->
+            <div class="posting my-8">
+              <a
+                href="/assets/v1.mp4"
+                target="_blank"
+                class="flex flex-col items-center my-3"
+              >
+                <video
+                  src="/assets/v2.mp4"
+                  class="w-[40%] rounded-2xl border border-white"
+                  controls
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </a>
+            </div>
+          </div>
+          <div class="hr h-[1px] bg-[grey]"></div>
+
+          <div class="react">
+            <div class="flex justify-around items-center sm:gap-4 flex-wrap">
+              <div class="comment flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-blue-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  chat_bubble_outline
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="retweet flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-green-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  repeat
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="like flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-pink-500 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  favorite_border
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="share flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-blue-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  share
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hr h-[1px] w-full bg-[#6e6e6e]"></div>
+          <div class="media my-4 space-y-2">
+            <div
+              class="post flex flex-col w-[90%] sm:mx-auto items-center justify-center"
+            >
+              <div class="flex items-center gap-5">
+                <div class="img">
+                  <img
+                    src="./assets/p0.jpg"
+                    alt="zunoon"
+                    class="w-[55px] h-[55px] sm:w-15 sm:h-15 rounded-full border-2 border-blue-500"
+                  />
+                </div>
+
+                <div class="flex flex-col">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="font-bold text-md md:text-lg hover:underline hover:text-blue-500 hover:cursor-pointer"
+                    >
+                      Zunoon Ali
+                    </span>
+                    <span class="material-symbols-outlined text-blue-700 ml-1">
+                      check_circle
+                    </span>
+                  </div>
+                  <div class="postText text-sm">Hehehe</div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between mt-2 gap-2">
+                <div class="status flex items-center text-sm gap-3">
+                  <span
+                    class="material-symbols-outlined text-[#5e5e5e] hover:text-white hover:cursor-pointer"
+                  >
+                    arrow_back_ios_new
+                  </span>
+                  <div
+                    class="role w-[140px] truncate whitespace-nowrap overflow-hidden md:blocktext-left text-sm text-[#5e5e5e] hover:text-white hover:cursor-pointer"
+                  >
+                    Working on a new project-6h 23min
+                  </div>
+                  <div class="dots font-bold text-sm sm:pl-10"></div>
+                </div>
+                <div>
+                  <span
+                    class="material-symbols-outlined text-[#5e5e5e] hover:cursor-pointer hover:text-blue-500"
+                  >
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="hr h-[1px] w-[90vw] bg-[#6e6e6e]"></div>
+
+            <!-- Posted Image -->
+            <div class="posting my-8">
+              <a
+                href="/assets/p1.jpg"
+                target="_blank"
+                class="flex flex-col items-center my-3"
+              >
+                <img
+                  src="/assets/p1.jpg"
+                  class="w-[40%] rounded-2xl border border-white"
+                  controls
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hr h-[1px] bg-[grey]"></div>
+
+          <div class="react">
+            <div class="flex justify-around items-center sm:gap-4 flex-wrap">
+              <div class="comment flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-blue-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  chat_bubble_outline
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="retweet flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-green-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  repeat
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="like flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-pink-500 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  favorite_border
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="share flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-blue-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  share
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hr h-[1px] w-full bg-[#6e6e6e]"></div>
+          <div class="hr h-[1px] w-full bg-[#6e6e6e]"></div>
+          <div class="media my-4 space-y-2">
+            <div
+              class="post flex flex-col w-[90%] sm:mx-auto items-center justify-center"
+            >
+              <div class="flex items-center gap-5">
+                <div class="img">
+                  <img
+                    src="./assets/p0.jpg"
+                    alt="zunoon"
+                    class="w-[55px] h-[55px] sm:w-15 sm:h-15 rounded-full border-2 border-blue-500"
+                  />
+                </div>
+
+                <div class="flex flex-col">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="font-bold text-md md:text-lg hover:underline hover:text-blue-500 hover:cursor-pointer"
+                    >
+                      Zunoon Ali
+                    </span>
+                    <span class="material-symbols-outlined text-blue-700 ml-1">
+                      check_circle
+                    </span>
+                  </div>
+                  <div class="postText text-sm">Hehehe</div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between mt-2 gap-2">
+                <div class="status flex items-center text-sm gap-3">
+                  <span
+                    class="material-symbols-outlined text-[#5e5e5e] hover:text-white hover:cursor-pointer"
+                  >
+                    arrow_back_ios_new
+                  </span>
+                  <div
+                    class="role w-[140px] truncate whitespace-nowrap overflow-hidden md:blocktext-left text-sm text-[#5e5e5e] hover:text-white hover:cursor-pointer"
+                  >
+                    Working on a new project-6h 23min
+                  </div>
+                  <div class="dots font-bold text-sm sm:pl-10"></div>
+                </div>
+                <div>
+                  <span
+                    class="material-symbols-outlined text-[#5e5e5e] hover:cursor-pointer hover:text-blue-500"
+                  >
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="hr h-[1px] bg-[#6e6e6e]"></div>
+
+            <!-- Posted Image -->
+            <div class="posting my-8">
+              <a
+                href="/assets/p2.jpg"
+                target="_blank"
+                class="flex flex-col items-center my-3"
+              >
+                <img
+                  src="/assets/p2.jpg"
+                  class="w-[40%] rounded-2xl border border-white"
+                  controls
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hr h-[1px] bg-[grey]"></div>
+
+          <div class="react">
+            <div class="flex justify-around items-center sm:gap-4 flex-wrap">
+              <div class="comment flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-blue-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  chat_bubble_outline
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="retweet flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-green-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  repeat
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="like flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-pink-500 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  favorite_border
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="share flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-blue-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  share
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hr h-[1px] w-full bg-[#6e6e6e]"></div>
+
+          <div class="hr h-[1px] w-full bg-[#6e6e6e]"></div>
+          <div class="media my-4 space-y-2">
+            <div
+              class="post flex flex-col w-[90%] sm:mx-auto items-center justify-center"
+            >
+              <div class="flex items-center gap-5">
+                <div class="img">
+                  <img
+                    src="./assets/p0.jpg"
+                    alt="zunoon"
+                    class="w-[55px] h-[55px] sm:w-15 sm:h-15 rounded-full border-2 border-blue-500"
+                  />
+                </div>
+
+                <div class="flex flex-col">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="font-bold text-md md:text-lg hover:underline hover:text-blue-500 hover:cursor-pointer"
+                    >
+                      Zunoon Ali
+                    </span>
+                    <span class="material-symbols-outlined text-blue-700 ml-1">
+                      check_circle
+                    </span>
+                  </div>
+                  <div class="postText text-sm">Hehehe</div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between mt-2 gap-2">
+                <div class="status flex items-center text-sm gap-3">
+                  <span
+                    class="material-symbols-outlined text-[#5e5e5e] hover:text-white hover:cursor-pointer"
+                  >
+                    arrow_back_ios_new
+                  </span>
+                  <div
+                    class="role w-[140px] truncate whitespace-nowrap overflow-hidden md:blocktext-left text-sm text-[#5e5e5e] hover:text-white hover:cursor-pointer"
+                  >
+                    Working on a new project-6h 23min
+                  </div>
+                  <div class="dots font-bold text-sm sm:pl-10"></div>
+                </div>
+                <div>
+                  <span
+                    class="material-symbols-outlined text-[#5e5e5e] hover:cursor-pointer hover:text-blue-500"
+                  >
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="hr h-[1px] w-[90vw] bg-[#6e6e6e]"></div>
+
+            <!-- Posted Image -->
+            <div class="posting my-8">
+              <a
+                href="/assets/p3.jpg"
+                target="_blank"
+                class="flex flex-col items-center my-3"
+              >
+                <img
+                  src="/assets/p3.jpg"
+                  class="w-[40%] rounded-2xl border border-white"
+                  controls
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hr h-[1px] bg-[grey]"></div>
+
+          <div class="react">
+            <div class="flex justify-around items-center sm:gap-4 flex-wrap">
+              <div class="comment flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-blue-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  chat_bubble_outline
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="retweet flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-green-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  repeat
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="like flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-pink-500 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  favorite_border
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+              <div class="share flex items-center gap-1">
+                <span
+                  class="material-symbols-outlined text-[#5e5e5e] hover:text-blue-600 hover:cursor-pointer p-3 hover:rounded-full hover:bg-[#252525]"
+                >
+                  share
+                </span>
+                <span class="text-[#5e5e5e]">12</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hr h-[1px] w-full bg-[#6e6e6e]"></div>
+        </div>
+      </div>
+
+      <!-- third section -->
+      <div class="third hidden lg:block w-[23vw] lg:ml-2">
+        <div class="search relative">
+          <span
+            class="material-symbols-outlined absolute left-4 top-1/2 transform -translate-y-1/2 text-white w-5 h-5"
+            >search</span
+          >
+
+          <input
+            type="text"
+            name=""
+            id=""
+            class="w-full p-[12px] pl-12 bg-[#252525] rounded-full text-white focus:outline-none"
+            placeholder="Search"
+          />
+        </div>
+        <div class="whats mt-2 bg-[#242323] rounded-lg p-2 space-y-1">
+          <h1 class="text-2xl px-3 font-bold">What's happening!</h1>
+          <!-- <div
+            class="item px-5 hover:bg-[#3a3939] hover:cursor-pointer py-1 rounded-lg space-y-1"
+          >
+            <div class="font-bold text-lg text-[#ffffff]">
+              Trends In Pakistan
+            </div>
+            <div class="text-sm text-[#c7c7c7]">#NewBudget</div>
+            <div class="text-sm text-[#cfcccc]">#804</div>
+            <div class="font-bold text-sm text-[#dddddd]">1.0 M Tweets</div>
+          </div> -->
+          <div
+            class="item px-3 hover:bg-[#3a3939] hover:cursor-pointer py-1 rounded-lg space-y-1"
+          >
+            <div class="font-bold text-lg text-[#ffffff]">
+              Trends In Pakistan
+            </div>
+            <div class="text-sm text-[#c7c7c7]">#NewBudget</div>
+            <div class="text-sm text-[#cfcccc]">#804</div>
+            <div class="font-bold text-sm text-[#dddddd]">1.0 M Tweets</div>
+          </div>
+          <div
+            class="item px-3 hover:bg-[#3a3939] hover:cursor-pointer py-1 rounded-lg space-y-1"
+          >
+            <div class="font-bold text-lg text-[#ffffff]">
+              Trends In Pakistan
+            </div>
+            <div class="text-sm text-[#c7c7c7]">#NewBudget</div>
+            <div class="text-sm text-[#cfcccc]">#804</div>
+            <div class="font-bold text-sm text-[#dddddd]">1.0 M Tweets</div>
+          </div>
+          <div
+            class="item px-3 hover:bg-[#3a3939] hover:cursor-pointer py-1 rounded-lg space-y-1"
+          >
+            <div class="font-bold text-lg text-[#ffffff]">
+              Trends In Pakistan
+            </div>
+            <div class="text-sm text-[#c7c7c7]">#NewBudget</div>
+            <div class="text-sm text-[#cfcccc]">#804</div>
+            <div class="font-bold text-sm text-[#dddddd]">1.0 M Tweets</div>
+          </div>
+          <div
+            class="item px-3 hover:bg-[#3a3939] hover:cursor-pointer py-1 rounded-lg space-y-1"
+          >
+            <div class="font-bold text-lg text-[#ffffff]">
+              Trends In Pakistan
+            </div>
+            <div class="text-sm text-[#c7c7c7]">#NewBudget</div>
+            <div class="text-sm text-[#cfcccc]">#804</div>
+            <div class="font-bold text-sm text-[#dddddd]">1.0 M Tweets</div>
+          </div>
+        </div>
+        <div class="who mt-2 bg-[#242323] rounded-lg p-4 space-y-2">
+          <h1 class="text-2xl px-3 font-bold lg:mb-5">Who to follow !</h1>
+ 
+         
+ <!-- item start -->
+ <div
+ class="item bg-[#2e2d2d] hover:bg-white hover:text-blue-600 hover:cursor-pointer py-1 rounded-lg flex justify-around mt-2 gap-2 p-2 transition duration-200 group mt-3"
+>
+ <div class="flex items-center justify-center gap-2">
+   <div class="img hidden lg:block">
+     <img
+       src="./assets/p0.jpg"
+       alt="acc"
+       class="w-[50px] h-[50px] rounded-full"
+     />
+   </div>
+   <div class="account">
+     <div class="font-bold text-sm text-white group-hover:text-blue-600 group-hover:underline group-hover:decoration-4 group-hover:decoration-blue-600">
+       Zunoon Ali
+     </div>
+     <div class="text-xs text-[#c7c7c7] group-hover:text-black">@zunoonali</div>
+   </div>
+ </div>
+ <div class="button mt-1.5">
+   <button
+     class="text-blue-600 font-bold bg-[#ffffff] rounded-full w-[80px] h-[40px] hover:bg-blue-700 hover:text-white border border-blue border-[2px] hover:border-black"
+   >
+     Follow
+   </button>
+ </div>
+</div>
+
+ <!-- item end -->
+ <!-- item start -->
+ <div
+ class="item bg-[#2e2d2d] hover:bg-white hover:text-blue-600 hover:cursor-pointer py-1 rounded-lg flex justify-around mt-2 gap-2 p-2 transition duration-200 group mt-3"
+>
+ <div class="flex items-center justify-center gap-2">
+   <div class="img hidden lg:block">
+     <img
+       src="./assets/p0.jpg"
+       alt="acc"
+       class="w-[50px] h-[50px] rounded-full"
+     />
+   </div>
+   <div class="account">
+     <div class="font-bold text-sm text-white group-hover:text-blue-600 group-hover:underline group-hover:decoration-4 group-hover:decoration-blue-600">
+       Zunoon Ali
+     </div>
+     <div class="text-xs text-[#c7c7c7] group-hover:text-black">@zunoonali</div>
+   </div>
+ </div>
+ <div class="button mt-1.5">
+   <button
+     class="text-blue-600 font-bold bg-[#ffffff] rounded-full w-[80px] h-[40px] hover:bg-blue-700 hover:text-white border border-blue border-[2px] hover:border-black"
+   >
+     Follow
+   </button>
+ </div>
+</div>
+
+ <!-- item end -->
+ <!-- item start -->
+ <div
+ class="item bg-[#2e2d2d] hover:bg-white hover:text-blue-600 hover:cursor-pointer py-1 rounded-lg flex justify-around mt-2 gap-2 p-2 transition duration-200 group mt-3"
+>
+ <div class="flex items-center justify-center gap-2">
+   <div class="img hidden lg:block">
+     <img
+       src="./assets/p0.jpg"
+       alt="acc"
+       class="w-[50px] h-[50px] rounded-full"
+     />
+   </div>
+   <div class="account">
+     <div class="font-bold text-sm text-white group-hover:text-blue-600 group-hover:underline group-hover:decoration-4 group-hover:decoration-blue-600">
+       Zunoon Ali
+     </div>
+     <div class="text-xs text-[#c7c7c7] group-hover:text-black">@zunoonali</div>
+   </div>
+ </div>
+ <div class="button mt-1.5">
+   <button
+     class="text-blue-600 font-bold bg-[#ffffff] rounded-full w-[80px] h-[40px] hover:bg-blue-700 hover:text-white border border-blue border-[2px] hover:border-black"
+   >
+     Follow
+   </button>
+ </div>
+</div>
+
+ <!-- item end -->
+ <!-- item start -->
+ <div
+ class="item bg-[#2e2d2d] hover:bg-white hover:text-blue-600 hover:cursor-pointer py-1 rounded-lg flex justify-around mt-2 gap-2 p-2 transition duration-200 group mt-3"
+>
+ <div class="flex items-center justify-center gap-2">
+   <div class="img hidden lg:block">
+     <img
+       src="./assets/p0.jpg"
+       alt="acc"
+       class="w-[50px] h-[50px] rounded-full"
+     />
+   </div>
+   <div class="account">
+     <div class="font-bold text-sm text-white group-hover:text-blue-600 group-hover:underline group-hover:decoration-4 group-hover:decoration-blue-600">
+       Zunoon Ali
+     </div>
+     <div class="text-xs text-[#c7c7c7] group-hover:text-black">@zunoonali</div>
+   </div>
+ </div>
+ <div class="button mt-1.5">
+   <button
+     class="text-blue-600 font-bold bg-[#ffffff] rounded-full w-[80px] h-[40px] hover:bg-blue-700 hover:text-white border border-blue border-[2px] hover:border-black"
+   >
+     Follow
+   </button>
+ </div>
+</div>
+
+ <!-- item end -->
+ <!-- item start -->
+ <div
+ class="item bg-[#2e2d2d] hover:bg-white hover:text-blue-600 hover:cursor-pointer py-1 rounded-lg flex justify-around mt-2 gap-2 p-2 transition duration-200 group mt-3"
+>
+ <div class="flex items-center justify-center gap-2">
+   <div class="img hidden lg:block">
+     <img
+       src="./assets/p0.jpg"
+       alt="acc"
+       class="w-[50px] h-[50px] rounded-full"
+     />
+   </div>
+   <div class="account">
+     <div class="font-bold text-sm text-white group-hover:text-blue-600 group-hover:underline group-hover:decoration-4 group-hover:decoration-blue-600">
+       Zunoon Ali
+     </div>
+     <div class="text-xs text-[#c7c7c7] group-hover:text-black">@zunoonali</div>
+   </div>
+ </div>
+ <div class="button mt-1.5">
+   <button
+     class="text-blue-600 font-bold bg-[#ffffff] rounded-full w-[80px] h-[40px] hover:bg-blue-700 hover:text-white border border-blue border-[2px] hover:border-black"
+   >
+     Follow
+   </button>
+ </div>
+</div>
+
+ <!-- item end -->
+
+ <div class="seeMore px-4 mt-4">
+  <button
+    class="text-blue-600 font-bold bg-white rounded-full px-3 py-2 hover:bg-blue-600 hover:text-white"
+  >
+    see more !
+  </button>
+</div>
+             
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function invertFavicon() {
+    let link = document.querySelector("link[rel~='icon']");
+    let img = document.createElement("img");
+
+    img.src = link.href;
+    img.crossOrigin = "anonymous";
+
+    img.onload = function () {
+      let canvas = document.createElement("canvas");
+      let ctx = canvas.getContext("2d");
+
+      canvas.width = img.width;
+      canvas.height = img.height;
+
+      ctx.drawImage(img, 0, 0);
+      let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      let data = imageData.data;
+
+      for (let i = 0; i < data.length; i += 4) {
+        data[i] = 255 - data[i]; // Invert Red
+        data[i + 1] = 255 - data[i + 1]; // Invert Green
+        data[i + 2] = 255 - data[i + 2]; // Invert Blue
+      }
+
+      ctx.putImageData(imageData, 0, 0);
+      link.href = canvas.toDataURL();
+    };
+  }
+
+  window.onload = invertFavicon;
+
+  document.querySelector(".hamburger").addEventListener("click", () => {
+    let side = document.querySelector(".first");
+    side.classList.toggle("hidden"); // Toggle menu visibility
+
+    document.querySelector(".hamburger").classList.add("hidden"); // Hide hamburger icon
+    document.querySelector(".close").classList.remove("hidden"); // Show close icon
+  });
+
+  document.querySelector(".close").addEventListener("click", () => {
+    let side = document.querySelector(".first");
+    side.classList.toggle("hidden"); // Toggle menu visibility
+
+    document.querySelector(".close").classList.add("hidden"); // Hide close icon
+    document.querySelector(".hamburger").classList.remove("hidden"); // Show hamburger icon
+  });
+</script>
