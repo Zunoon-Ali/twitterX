@@ -1,78 +1,93 @@
-##how to setup tailwindCss
+Step 1: Install Tailwind CSS
 
-step 1: Run  the folowing command
-'''
-    npm install -D tailwindcss  
-    npx tailwindcss init
-'''
-step 2: update tailwindcss.config.js file to include this line
+Run the following command:
 
-"
- @type {import('tailwindcss').Config} */
+'''
+npm install -D tailwindcss
+npx tailwindcss init
+'''
+
+For CLI support, install:
+
+'''
+npm install tailwindcss @tailwindcss/cli  
+'''
+
+Step 2: Configure tailwind.config.js
+
+Update the content array to match HTML and JS files:
+
+'''
+/** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ["./*.{html,js}"], // Match all HTML and JS files
     theme: {
       extend: {
         fontSize: {
-          '9xl': '8rem', // Add custom large text size
+          '9xl': '8rem',
           '10xl': '10rem',
         },
         colors: {
           red: {
-            850: '#b20000', // Add a custom red shade
+            850: '#b20000', // Custom red shade
           },
         },
       },
     },
     plugins: [],
-  };
-"
+};
 '''
 
-content : ["*.html"],
 
-'''
+Step 3: Create src/input.css and Include Tailwind
 
-step 3: include src/input.css these
+Inside src/input.css, add:
 
-"
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-"
-it is used in new version
+@import "tailwindcss";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+Note:
+
+The @import "tailwindcss"; syntax is incorrect. Instead, use the above approach.
+
 '''
 @import "tailwindcss";
-
 '''
 
-step 4: include src/output.css using this command
+Step 4: Generate output.css
+
+Run this command to process Tailwind styles:
 
 '''
-npx tailwindcss -i ./input.css -o ./output.css --watch
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+'''
+Step 5: Link output.css in Your HTML
+
+In your HTML file, include:
 
 '''
-
-step 5: link src/output.css in html file
-
+<link href="./src/output.css" rel="stylesheet">
 '''
 
-  <link href="./output.css" rel="stylesheet">
+Setting Up Tailwind with Vite
+
+For Vite projects, install Tailwind with:
 
 '''
-
-for vite :
-
 npm install tailwindcss @tailwindcss/vite
+'''
 
-
-than
+Then, start the development server:
 
 npm run dev
 
+Update your package.json scripts:
 
+'''
 "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
-    "dev": "vite" -> write this before
-  },
+    "dev": "vite",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+},
+'''
